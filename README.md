@@ -1,3 +1,18 @@
+# Chat Room
+
+#### This is a work in progress application
+
+---
+
+##### Things I wish to add
+
+- [x] Ability to authenticate using Google Accounts
+- [ ] Ability to authenticate using GitHub, Facebook, and Twitter
+- [ ] Ability to create custom Chat Rooms (option for temporary rooms + saved rooms)
+- [ ] Ability to Voice / Video Call
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

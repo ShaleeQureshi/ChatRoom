@@ -1,0 +1,16 @@
+$fontMedium: Medium;
+$fontHeader: Header;
+
+#room-header {
+  font-family: $fontHeader;
+}
+
+.landing-txt {
+  h1 {
+    font-family: $fontHeader;
+  }
+}
+
+.msgs {
+  font-family: $fontMedium;
+}
