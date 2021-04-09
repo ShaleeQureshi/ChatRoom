@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import { Route, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { AuthContext } from "./auth";
+import LoginApp from "../views/login-page";
 
 const PrivateRoute = ({ component: RouteComponent, ...rest }) => {
   const { currentUser } = useContext(AuthContext);
@@ -11,7 +12,7 @@ const PrivateRoute = ({ component: RouteComponent, ...rest }) => {
         !!currentUser ? (
           <RouteComponent {...routeProps} />
         ) : (
-          <Redirect to={"/"} />
+          <LoginApp previousRoute={window.location.href} />
         )
       }
     />

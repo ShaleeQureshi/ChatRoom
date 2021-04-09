@@ -16,6 +16,7 @@ import PrivateRoute from "./private-route";
 
 // Importing views
 import LoginApp from "../views/login-page";
+import HomeApp from "../views/home-page";
 import RoomApp from "../views/room-page";
 
 function App() {
@@ -24,11 +25,12 @@ function App() {
       <HashRouter basename="/ChatRoom/">
         <Switch>
           <Route
-            path={["/", "/home", "/index", "sign-in", "signin", "login"]}
+            path={["/", "sign-in", "signin", "login"]}
             exact
             component={LoginApp}
           />
-          <PrivateRoute path="/room" exact component={RoomApp} />
+          <PrivateRoute path={["/home", "/index"]} exact component={HomeApp} />
+          <PrivateRoute path="/room/:roomID" exact component={RoomApp} />
         </Switch>
       </HashRouter>
     </AuthProvider>

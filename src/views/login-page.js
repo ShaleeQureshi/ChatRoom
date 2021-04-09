@@ -4,10 +4,13 @@ import { Button } from "react-bootstrap";
 import { AuthContext } from "../scripts/auth";
 import Footer from "../components/footer";
 
-const LoginApp = ({ history }) => {
+const LoginApp = ({ history, previousRoute }) => {
   const { currentUser } = useContext(AuthContext);
-  if (currentUser) {
-    history.push("/room");
+
+  if (currentUser && typeof previousRoute === "undefined") {
+    history.push("/home");
+  } else if (currentUser && typeof previousRoute !== "undefined") {
+    history.push(previousRoute);
   }
 
   const signInWithGoogle = () => {
