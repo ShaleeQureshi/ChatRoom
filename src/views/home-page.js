@@ -33,11 +33,9 @@ const HomeApp = ({ history }) => {
     const cell1 = newRow.insertCell(0);
     cell1.innerHTML = chatName;
   };
-
   const createRoom = (e) => {
     e.preventDefault();
     const val = document.getElementById("roomID").value;
-
     firebase
       .database()
       .ref(`/user/${currentUser["uid"]}/rooms/${val}`)

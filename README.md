@@ -7,8 +7,9 @@
 ##### Things I wish to add
 
 - [x] Ability to authenticate using Google Accounts
-- [ ] Ability to authenticate using GitHub, Facebook, and Twitter
-- [ ] Ability to create custom Chat Rooms (option for temporary rooms + saved rooms)
+- [x] Ability to create custom Chat Rooms (option for temporary rooms + saved rooms)
+- [x] Ability to join multiple rooms + save messages + rejoin rooms later
+
 - [ ] Ability to Voice / Video Call
 
 ---

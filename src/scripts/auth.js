@@ -12,7 +12,6 @@ export const AuthProvider = ({ children }) => {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         fb.auth().setPersistence(fb.auth.Auth.Persistence.LOCAL);
-        console.log(user);
         setCurrentUser(user);
       }
       setPending(false);

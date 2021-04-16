@@ -9,14 +9,14 @@ const Navigation = ({ history }) => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/ChatRoom#/home">Home</Nav.Link>
-          <Nav.Link href="/ChatRoom#/room/All-Chat">All-Chat</Nav.Link>
+          <Nav.Link href="/ChatRoom/#/home">Home</Nav.Link>
+          <Nav.Link href="/ChatRoom/#/room/All-Chat">All-Chat</Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link
             onClick={() => {
               firebase.auth().signOut();
-              window.location.replace("/");
+              window.location.replace("/ChatRoom/");
             }}
           >
             Sign Out

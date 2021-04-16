@@ -99,29 +99,31 @@ class ChatRoom extends React.Component {
         </section>
         <section className="mt-5 ">
           <div className="message-form ">
-            {this.state.chat.map((chat) => {
-              if (chat.uid !== firebase.auth().currentUser.uid) {
-                return (
-                  <span key={chat.time}>
-                    <p>
-                      {chat.content}
-                      <br />
-                      <span id="sender">Sent by: {chat.email}</span>
-                    </p>
-                  </span>
-                );
-              } else {
-                return (
-                  <span key={chat.time}>
-                    <p id="sender-me">
-                      {chat.content}
-                      <br />
-                      <span id="sender">Sent by: YOU</span>
-                    </p>
-                  </span>
-                );
-              }
-            })}
+            <div className="inner-msgs">
+              {this.state.chat.map((chat) => {
+                if (chat.uid !== firebase.auth().currentUser.uid) {
+                  return (
+                    <span key={chat.time}>
+                      <p>
+                        {chat.content}
+                        <br />
+                        <span id="sender">Sent by: {chat.email}</span>
+                      </p>
+                    </span>
+                  );
+                } else {
+                  return (
+                    <span key={chat.time}>
+                      <p id="sender-me">
+                        {chat.content}
+                        <br />
+                        <span id="sender">Sent by: YOU</span>
+                      </p>
+                    </span>
+                  );
+                }
+              })}
+            </div>
           </div>
           <Form
             onSubmit={this.sendMessage}
