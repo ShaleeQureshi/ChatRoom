@@ -83,7 +83,7 @@ class ChatRoom extends React.Component {
                       .remove()
                       .then(() => {
                         alert("Room deleted!");
-                        window.location.replace("/home");
+                        window.location.replace("/ChatRoom/#/home");
                       });
                   })
                   .catch((error) => {
