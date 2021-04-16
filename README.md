@@ -10,8 +10,6 @@
 - [x] Ability to create custom Chat Rooms (option for temporary rooms + saved rooms)
 - [x] Ability to join multiple rooms + save messages + rejoin rooms later
 
-- [ ] Ability to Voice / Video Call
-
 ---
 
 # Getting Started with Create React App
