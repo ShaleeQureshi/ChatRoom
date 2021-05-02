@@ -4,10 +4,10 @@ Users must log in using their Google accounts to access this platform. Once auth
 
 ---
 
-##### Things I wish to add
+##### Features added as of 2021/05/02
 
 - [x] Ability to authenticate using Google Accounts
-- [x] Ability to create custom Chat Rooms (option for temporary rooms + saved rooms)
+- [x] Ability to create/delete custom Chat Rooms (option for temporary rooms + saved rooms)
 - [x] Ability to join multiple rooms + save messages + rejoin rooms later
 
 ---
