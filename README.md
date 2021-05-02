@@ -1,6 +1,6 @@
 # Chat Room
 
-#### This is a work in progress application
+Users must log in using their Google accounts to access this platform. Once authenticated, users can create, share, and delete chatrooms at will :smiley:. All messages sent in the chatrooms are saved unless the chatroom is deleted by a user. If you're feeling lonely, chat in All-Chat - it's a room that no one can delete and that everyone can access. :grin:
 
 ---
 
